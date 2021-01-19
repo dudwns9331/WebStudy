@@ -1,0 +1,17 @@
+/* google Fonts 사이트를 통해서 폰트를 정하고 다운한 뒤, @import 쿼리를 이용해서 직접 CSS에 불러온다. */
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600&display=swap");
+
+/* 브라우저의 설정을 초기화 시켜주는 CSS를 import 해준다. */
+@import "reset.css";
+@import "variables.css";
+
+/* Components */
+@import "components/status-bar.css";
+
+/* Srcreens */
+@import "screens/login.css";
+
+/* font-family 이용 기본 글꼴 사용 모두 적용될 수 있는 것만 남긴다.*/
+body {
+  font-family: "Open Sans", sans-serif;
+}

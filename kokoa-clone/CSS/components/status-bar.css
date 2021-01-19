@@ -1,0 +1,32 @@
+/* 상태바 전체 적용 display:flex, center */
+/* between-content 안쓰는 이유는 양 옆에 길이가 다르기 때문에 가운데 값을 정렬할 수 없음 */
+.status-bar {
+  display: flex;
+  justify-content: center;
+  padding: 5px 3px;
+}
+/* cetner을 사용했으므로 33%으로 나눠준다. */
+.status-bar__column {
+  width: 33%;
+}
+
+.status-bar__column:first-child span {
+  margin-right: 5px;
+}
+
+/* 가운데 있는 span값을 가운데로 옮겨줌 */
+.status-bar__column:nth-child(2) {
+  display: flex;
+  justify-content: center;
+}
+
+.status-bar__column:last-child {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+}
+
+/* status-bar__column 안에 배터리 이미지를 좌우에 margin값을 5px 씩 준다. */
+.status-bar__column .fa-battery-full {
+  margin: 0px 5px;
+}

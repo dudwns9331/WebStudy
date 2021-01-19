@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="kr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Welcome to Kokoa Talk!</title>
+
+    <link rel="stylesheet" href="CSS/styles.css" />
+  </head>
+  <!-- 헤드 끝 -->
+
+  <body>
+    <div class="status-bar">
+      <!-- 클래스 이름을 지어줄 때 부모 자식의 명시 BEM(Block-Element-Modifier)방식-->
+      <div class="status-bar__column">
+        <span>No service</span>
+        <!-- awesome font site 에서 가져온 아이콘 -->
+        <i class="fas fa-wifi"></i>
+      </div>
+      <div class="status-bar__column">
+        <span>18:43</span>
+      </div>
+      <div class="status-bar__column">
+        <span>110%</span>
+        <!-- 배터리 만땅 아이콘 -->
+        <i class="fas fa-battery-full fa-lg"></i>
+        <!-- 전기 아이콘 -->
+        <i class="fas fa-bolt"></i>
+      </div>
+    </div>
+
+    <!-- 본문 제일 윗 내용 -->
+    <header class="welcome-header">
+      <h1 class="welcome-header__title">Welcome to Kokoa Clone</h1>
+      <p class="welcome-header__text">
+        If you have a Kakao Account, log in with youer eamil or phone number.
+      </p>
+    </header>
+    <!-- 헤더 끝 -->
+
+    <!-- action은 intent의 느낌 데이터를 어디로 보낼건가? -->
+    <!-- method는 GET, POST과 같은 서버 전송 명령어-->
+    <form action="friends.html" method="GET" id="login-form">
+      <input name="username" type="text" placeholder="Email or phone number" />
+      <input name="password" type="password" placeholder="Password" />
+      <input type="submit" value="Log In" />
+      <!-- <input type="submit" value="Sign Up" /> -->
+      <a href="#">Find Kokoa Account or Password</a>
+    </form>
+
+    <!-- 코드킷 자바스크립트, From awesome font site -->
+    <script
+      src="https://kit.fontawesome.com/17a0ba892b.js"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+  <!-- 바디 끝 -->
+</html>
