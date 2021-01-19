@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="kr">
+  <head>
+    <title>test</title>
+    <style>
+      body {
+        height: 100vh;
+        margin: 50px;
+      }
+      div {
+        width: 150px;
+        height: 150px;
+        background-color: wheat;
+        position: relative;
+      }
+
+      span {
+        background-color: khaki;
+      }
+      /* 
+      span:first-child {
+        background-color: red;
+      } */
+
+      /* span:nth-child(3),
+      span:nth-child(5) {
+        background-color: red;
+      } */
+
+      /* n을 이용해서 배수로 적용도 가능하다. */
+      span:nth-child(2n + 1) {
+        background-color: tomato;
+      }
+
+      /* 이거는 적용되는데 live_server로 돌리면 마지막 자식 안나옴 */
+      /* div:first-child {
+        background-color: indigo;
+      }
+
+      div:last-child {
+        background-color: red;
+      } */
+      /* span이랑 섞어서 쓰면 안된다. ㄹㅇ 마지막 자식만 읽기 때문이다. */
+    </style>
+  </head>
+
+  <body>
+    <span>hello</span>
+    <span>hello</span>
+    <span>hello</span>
+    <span>hello</span>
+    <span>hello</span>
+    <span>hello</span>
+    <span>hello</span>
+    <span>hello</span>
+    <span>hello</span>
+    <span>hello</span>
+  </body>
+</html>

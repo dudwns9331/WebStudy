@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+  <!-- CSS는 위에서부터 아래로 코드를 읽는다. -->
+  <!-- 제일 마지막에 적용 시켜주는게 당연히 남는다 -->
+  <head>
+    <title>test</title>
+    <style>
+      body {
+        margin: 20px;
+      }
+
+      /* selector로 여러 개의 아이디를 지정할 수 있다. , 컴마로 구분하여 기술 */
+      /* 클래스는 ".클래스이름 " 으로 기술한다. class이름을 각 태그에 적용가능 */
+      /* 어떤 요소들은 클래스를 여러개를 가질 수 있다. 각 클래스는 공백으로 구분한다. */
+      /* 클래스를 통해서 공통적인 것에 대한 적용으로 중복을 피할 수 있다. */
+      /* id는 특정한 태그를 지정할때만 쓰자. 제한이 많기 때문에 */
+
+      .btn {
+        padding: 5px 10px;
+        border-radius: 5px;
+      }
+      .tomato {
+        background-color: tomato;
+        color: wheat;
+      }
+
+      span {
+        /* inline은 높이와 너비가 없다. 따라서 위 아래는 적용되지 않는다. */
+        background-color: teal;
+      }
+    </style>
+  </head>
+
+  <body>
+    <span class="btn">hello</span>
+    <span class="btn tomato">hello</span>
+    <span class="btn">hello</span>
+    <span class="btn tomato">hello</span>
+    <span class="btn">hello</span>
+  </body>
+</html>

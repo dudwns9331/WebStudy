@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="kr">
+  <head>
+    <title>test</title>
+    <style>
+      body {
+        height: 100vh;
+        margin: 50px;
+      }
+
+      span {
+        color: tomato;
+        background-color: wheat;
+        padding: 5px;
+        border-radius: 10px;
+      }
+
+      /* 부모를 먼저 쓰고 자식을 쓰면 찾아 들어가서 적용한다. */
+      div p span {
+        color: teal;
+      }
+      /* div 바로 밑의 자식에게 적용하는 방법 */
+      /* div > span {
+        text-decoration: underline;
+      } */
+
+      /* p 안에 있는 것이 아니라 p 다음에 오는 span을 조정함  */
+      /* p + span {
+        text-decoration: underline;
+      } */
+
+      /* 바로 다음에 오지 않아도 적용이 가능함. 하나만 적용하는게 아니라 모두 적용된다. */
+      p ~ span {
+        text-decoration: underline;
+      }
+
+      input {
+        border: 1px solid wheat;
+      }
+
+      input:required {
+        border-color: tomato;
+      }
+
+      /* attribute를 통해서 selector를 적용시켜줄 수 있다. */
+      /* attribute를 지정해주고 ~= 라는 표현을 통해서 다음 문자열을 포함하는 것들을 지정할 수 있다. */
+      /* $=, ~=, *= 등 다양하게 지정가능 */
+      input[placeholder~="Name"] {
+        background-color: rgb(160, 160, 45);
+      }
+    </style>
+  </head>
+
+  <body>
+    <div>
+      <form>
+        <input type="text" placeholder="Fist Name" />
+        <input type="text" placeholder="Last Name" />
+        <input type="password" required placeholder="password" />
+      </form>
+      <!-- 
+      <span>hello</span>
+      <p>
+        핵·오토 프로그램과 대리게임. 게임을 좀먹는 대표적인 기생충들이다.
+        유저들이 더이상 그 게임을 플레이 하지 않게 만드는 큰 이유가 되기도 한다.
+        이용자 뿐만 아니다. 게임개발사도 심각한 피해를 입는다. 배틀그라운드의
+        경우, 핵으로 인한 피해액이 수 조 원에 달한다는 보고가 있을 정도다.
+        <span>inside</span>
+        <span>inside</span>
+      </p>
+      <address>hi</address>
+      <span>hello</span> -->
+    </div>
+  </body>
+</html>

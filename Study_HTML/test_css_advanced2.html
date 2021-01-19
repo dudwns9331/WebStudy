@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+
+<html lang="kr">
+  <head>
+    <title>test_css_advanced</title>
+
+    <!-- transition 은 애니메이션을 의미한다? -->
+    <style>
+      img {
+        border: 5px solid black;
+        border-radius: 50%;
+        /* radius가 50% 이면 원이 된다. */
+        width: 300px;
+        height: 300px;
+
+        transition: transform 1000ms ease-in-out;
+
+        /* transform: rotateZ(90deg); */
+
+        /* translate: ; 이미지값을 변환시키지 않는다. */
+        /* transform으로 속성을 조절해서 변환시킬 수 있다. */
+        /* 페이지의 픽셀을 변환시키기 때문에 box 차원의 margin padding과는 상관 없다. */
+      }
+
+      img:hover {
+        transform: rotateX(360deg);
+      }
+    </style>
+  </head>
+  <body>
+    <img src="고영희.jpg" />
+  </body>
+</html>

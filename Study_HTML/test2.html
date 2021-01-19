@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+  <!-- CSS는 위에서부터 아래로 코드를 읽는다. -->
+  <!-- 제일 마지막에 적용 시켜주는게 당연히 남는다 -->
+  <head>
+    <title>test</title>
+    <style>
+      /* 모든 것을 적용하고 싶을 때 * 을 쓴다 inline box 둘 다 적용된다.*/
+      * {
+        border: 2px solid black;
+      }
+      /* 같은 이름의 태그를 사용하는 것들은 한번에 적용된다. */
+      html {
+        background-color: tomato;
+      }
+
+      /* margin > border > padding  > content */
+      /* blcok을 담고 있는 block의 border 값이 같으면 두 개를 하나로 취급한다. margin collapse */
+
+      body {
+        /* margin 값을 2개 주게되면 상하, 좌우 순으로 값이 적용된다. 4개면 시계 방향 순 */
+        margin: 20px;
+        padding: 20px;
+        background-color: thistle;
+      }
+      div {
+        /* inline의 값은 높이와 너비를 갖지 않는다. */
+        padding: 10px;
+        border: 2px solid black;
+        /* margin 은 block의 border 바깥의 부분이다. */
+      }
+      /* 아이디를 의미하는 것은 #을 이용해서 한다. element이기 때문에 따로 써야함 */
+      #first {
+        background-color: whitesmoke;
+        height: 150px;
+        width: 150px;
+      }
+      #second {
+        background-color: blanchedalmond;
+        height: 100px;
+        width: 100px;
+      }
+      #third {
+        background-color: wheat;
+        height: 50px;
+        width: 50px;
+      }
+    </style>
+  </head>
+  <body>
+    <!-- div라는 박스 옆에는 아무런 값도 올 수 없다 -->
+    <!-- id를 태그마다 지정해 줄 수 있다. -->
+    <div id="first">
+      <div id="second">
+        <div id="third"></div>
+      </div>
+    </div>
+  </body>
+</html>

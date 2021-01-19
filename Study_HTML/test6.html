@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>test</title>
+    <style>
+      body {
+        height: 1000vh;
+        margin: 50px;
+      }
+
+      div {
+        /* 위치를 고정시킨다. 스크롤해도 따라옴 */
+        /* position: fixed; */
+        width: 300px;
+        height: 300px;
+        background-color: wheat;
+        position: relative;
+        /* position: static; */
+        /* position static 원래의 자리에 놓는것 디폴트값이다. */
+      }
+
+      .green {
+        background-color: teal;
+        height: 100px;
+        width: 100px;
+        position: absolute;
+        right: 0px;
+        bottom: 0px;
+        /* 아주 조금 움직일 때 유용하다. */
+        /* position : relative 원래 위치한 곳에서 기준점에서 이동한다. */
+        /* position : absolute 는 가장 가까운 relative 부모를 기준으로 이동한다.  */
+        /* div green 의 부모 div가 relative가 아니기 때문에 body에 따라서 한다. */
+        /* div에 relative를 넣게 되면 원하는대로 div 내에서 움직이는게 가능함. */
+      }
+    </style>
+  </head>
+
+  <body>
+    <div>
+      <div class="green"></div>
+    </div>
+  </body>
+</html>

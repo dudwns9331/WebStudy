@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html>
+  <!-- 이건 보이지 않는 태그의 종류이다. -->
+  <head lang="kr">
+    <!-- 링크를 통해서 rel, sizes, href -> 탭에 보이는 이미지 설정 가능 -->
+    <link rel="shortcut icon" sizes="16x16 32x32 64x64" href="고영희.jpg" />
+    <!-- 이건 탭을 열었을 때 적용되는 title 이름 -->
+    <title>Home - My first website</title>
+    <!-- 이건 웹 브라우저에서 설정하는 설명란 -->
+    <meta name="description" content="This is my website" />
+    <!-- 웹 사이트가 어떤 형식으로 text를 인코딩 할 것인가? -->
+    <meta charset="utf-8" />
+    <link href="style.css" rel="stylesheet" />
+    <style></style>
+  </head>
+  <body>
+    <h1>Hello this is my website h1</h1>
+    <h2>another one h2</h2>
+    <h3>another one h3</h3>
+    <h4>another one h4</h4>
+    <h5>another one h5</h5>
+    <h6>another one h6</h6>
+
+    <p>
+      My Name is
+      <abbr title="yj"
+        ><mark><strong>YeongJun</strong> </mark></abbr
+      >
+      <br />
+
+      2<sup>5</sup>
+    </p>
+
+    <p>
+      <audio
+        controls
+        autoplay
+        src="https://interactive-examples.mdn.mozilla.net/media/cc0-audio/t-rex-roar.mp3"
+      />
+    </p>
+
+    <cite>cite example</cite>
+
+    <ol>
+      <li>1</li>
+      <li>2</li>
+      <li>3</li>
+    </ol>
+
+    <ul>
+      <li>1</li>
+      <li>2</li>
+      <li>3</li>
+    </ul>
+
+    <h1>Hello!</h1>
+    <a href="http://www.google.com" target="_blank">Go to google.com</a>
+    <a href="http://www.google.com" target="_self">Go to google.com</a>
+
+    <form>
+      <label for="Name">Name</label>
+      <input id="Name" required placeholder="Name" type="text" />
+      <label for="LastName">Last Name</label>
+      <input id="LastName" required placeholder="LastName" type="text" />
+      <label for="UserName">User Name</label>
+      <input
+        id="UserName"
+        required
+        placeholder="UserName"
+        disabled
+        type="text"
+      />
+      <label for="Password">Last Name</label>
+      <input id="Password" required placeholder="Password" type="password" />
+      <input type="submit" />
+
+      <label for="Website">Website</label>
+      <input id="Website" required placeholder="url" type="url" />
+    </form>
+
+    <!-- <img src="고영희.jpg" /> -->
+  </body>
+</html>

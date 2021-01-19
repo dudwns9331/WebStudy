@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+  <!-- CSS는 위에서부터 아래로 코드를 읽는다. -->
+  <!-- 제일 마지막에 적용 시켜주는게 당연히 남는다 -->
+  <head>
+    <title>test</title>
+    <!-- 밖에서 CSS를 조절해주는 것을 external CSS라고 한다. -->
+    <link href="style.css" rel="stylesheet" />
+    <!-- 안에서 css를 조작해주는걸 inline CSS라고 한다. -->
+    <style>
+      h1 {
+        /* 태그를 먼저 지정하고 중괄호로 묶는다. */
+        /* 속성 값을 적는다 */
+        /* 속성 이름을 쓰고 콜론을 쓰고 값을 적는다. */
+        /* 에러가 있어도 적용은 안되고 실행은 된다. */
+        color: yellowgreen;
+        font-size: 50px;
+        font-weight: 800;
+      }
+      h2 {
+        text-align: center;
+        font-weight: 800;
+        font-size: 200px;
+        color: turquoise;
+      }
+    </style>
+  </head>
+  <body>
+    <header>
+      <h1>Practice CSS</h1>
+    </header>
+    <main>
+      <h2>This is main</h2>
+    </main>
+    <footer>&copy; 2020 Y.J</footer>
+  </body>
+</html>

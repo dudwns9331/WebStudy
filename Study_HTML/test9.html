@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="kr">
+  <head>
+    <title>test</title>
+    <style>
+      :root {
+        --main-color: #fcce00;
+      }
+
+      body {
+        height: 100vh;
+        margin: 50px;
+      }
+
+      /* 이걸 state 상태라고 한다. */
+      /* active, hover, focus, visited, focus-within */
+      /* :active는 클릭 했을때의 상태, :hover는 올려놓으면, :focus는 toggle처럼 */
+
+      button:active {
+        background-color: red;
+      }
+
+      a:visited {
+        color: red;
+      }
+      a:hover {
+        color: blue;
+      }
+      a:focus {
+        color: yellow;
+      }
+
+      /* placeholder를 커스텀하기 위해서 사용된다. */
+      input::placeholder {
+        color: yellowgreen;
+      }
+      /* ::selection으로 드래그 해서 셀렉 했을때 커스텀 가능 */
+      p::selection {
+        color: violet;
+      }
+      /* p의 첫 글자를 커스텀 하기 위해서 쓴다. */
+      p::first-letter {
+        font-size: 20px;
+      }
+
+      a {
+        color: var(--main-color);
+      }
+
+      /* :focus-within 은 부모에게 적용된다. 자식이 focus받으면 부모에게 적용*/
+    </style>
+  </head>
+
+  <body>
+    <div>
+      <button>Hello</button>
+      <a href="https://naver.com">네이버</a>
+    </div>
+  </body>
+</html>

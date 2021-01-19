@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>test</title>
+    <style>
+      body {
+        height: 1000vh;
+        margin: 20px;
+      }
+
+      /* position은 static(default), fixed, relative, absolute */
+
+      div {
+        /* 위치를 고정시킨다. 스크롤해도 따라옴 */
+        /* position: fixed; */
+        width: 300px;
+        height: 300px;
+        color: white;
+        background-color: teal;
+      }
+
+      /* 클래스 중에서 선택하는 기능 pseudo selector */
+
+      .different {
+        /* top이나 bottom 같은 속성을 수정하면 같은 레이어에 존재하는게 아니기 때문에 그 위의 것은 무시한다. */
+        /* top: 30px; */
+        background-color: wheat;
+      }
+      /* position fixed를 이용하면 레이어를 부수고 다른 레이어에 위치한다. */
+      /* 모든 레이어의 위에 위치하게 된다. */
+      #green {
+        background-color: green;
+        position: fixed;
+        opacity: 0.2;
+      }
+    </style>
+  </head>
+
+  <body>
+    <div id="green"></div>
+    <div class="different"></div>
+  </body>
+</html>

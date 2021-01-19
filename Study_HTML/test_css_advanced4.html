@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+
+<html lang="kr">
+  <head>
+    <title>test_css_advanced</title>
+    <style>
+      body {
+        display: flex;
+        height: 100vh;
+        align-items: center;
+        justify-content: center;
+      }
+
+      div {
+        background-color: teal;
+        width: 200px;
+        height: 200px;
+      }
+      /* media query는 오직 css만을 이용해서 스크린의 사이즈를 아는 방법이다. */
+      @media screen and (max-width: 1000px) {
+        div {
+          background-color: tomato;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <div></div>
+  </body>
+</html>
