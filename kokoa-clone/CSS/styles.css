@@ -10,6 +10,7 @@
 @import "components/nav-bar.css";
 @import "components/screen-header.css";
 @import "components/user-component.css";
+@import "components/badge.css";
 
 /* Srcreens */
 @import "screens/login.css";
@@ -21,4 +22,8 @@ body {
   padding-top: 20px;
   font-family: "Open Sans", sans-serif;
   height: 1000vh;
+}
+
+.main-screen {
+  padding: 0px var(--horizontal-space);
 }

@@ -23,15 +23,6 @@
 }
 
 .nav__notification {
-  background-color: tomato;
-  width: 20px;
-  height: 20px;
-  border-radius: 10px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  color: white;
-  font-weight: 600;
   /* 아이콘 위에 숫자를 올리는 작업 */
   /* position은 겹치게 올리는 방법으로 가장 가까운 position relative를 기준으로 배치 */
   position: absolute;
