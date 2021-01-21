@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="kr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Find - Kokoa Clone</title>
+
+    <link rel="stylesheet" href="CSS/styles.css" />
+  </head>
+  <!-- 헤드 끝 -->
+
+  <body>
+    <!-- 상태바 -->
+    <div class="status-bar">
+      <!-- 클래스 이름을 지어줄 때 부모 자식의 명시 BEM(Block-Element-Modifier)방식-->
+      <div class="status-bar__column">
+        <span>No service</span>
+        <!-- awesome font site 에서 가져온 아이콘 -->
+        <i class="fas fa-wifi"></i>
+      </div>
+      <div class="status-bar__column">
+        <span>18:43</span>
+      </div>
+      <div class="status-bar__column">
+        <span>110%</span>
+        <!-- 배터리 만땅 아이콘 -->
+        <i class="fas fa-battery-full fa-lg"></i>
+        <!-- 전기 아이콘 -->
+        <i class="fas fa-bolt"></i>
+      </div>
+    </div>
+
+    <!-- 스크린 헤더 Freinds, icons -->
+    <header class="screen-header">
+      <h1 class="screen-header__title">Find</h1>
+      <div class="screen-header__icons">
+        <span><i class="fas fa-search fa-lg"></i></span>
+        <span><i class="fas fa-cog fa-lg"></i></span>
+      </div>
+    </header>
+
+    <!-- friends-screen -->
+    <main class="main-screen">
+      <div class="find-icons">
+        <div class="find-icons__icon">
+          <i class="fas fa-qrcode"></i>
+          <span>QR Code</span>
+        </div>
+        <div class="find-icons__icon">
+          <i class="far fa-address-book"></i>
+          <span>Add by Contacts</span>
+        </div>
+        <div class="find-icons__icon">
+          <i class="fas fa-fingerprint"></i>
+          <span>Add by ID</span>
+        </div>
+        <div class="find-icons__icon">
+          <i class="far fa-envelope"></i>
+          <span>Invite</span>
+        </div>
+      </div>
+
+      <div class="recommended-friends">
+        <h6 class="recommended-friends__title">Recommended Friends</h6>
+        <span>You have no recommended friends.</span>
+      </div>
+      <div class="open-chat">
+        <div class="open-chat__header">
+          <h4>Open Chat</h4>
+          <span
+            >Go to OpenChat Home <i class="fas fa-chevron-right fa-xs"></i
+          ></span>
+        </div>
+        <div class="open-post">
+          <div class="open-post__column">
+            <h5 class="open-post__title">#CAT</h5>
+            <h6 class="open-post__hashtags">#cat#cute#catmaster</h6>
+            <div class="open-post__members">
+              <img
+                src="https://avatars1.githubusercontent.com/u/53427147?s=400&u=73f38bc896b7ce68fcb8557ce2927fcfb689a2e1&v=4"
+              />
+              <span class="open-post__member-count">1004 members</span>
+              <div class="divider"></div>
+              <span class="open-post__member-status">Active</span>
+            </div>
+          </div>
+          <div class="open-post__column">
+            <div class="open-post__photo">
+              <img
+                src="https://avatars1.githubusercontent.com/u/53427147?s=400&u=73f38bc896b7ce68fcb8557ce2927fcfb689a2e1&v=4"
+              />
+              <div class="open-post__heart-count">
+                <i class="fas fa-heart fa-xs"></i>
+                <span>999+</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </main>
+
+    <!-- 네비게이션 바 -->
+    <nav class="nav">
+      <ul class="nav__list">
+        <li class="nav__btn">
+          <a class="nav__link" href="friends.html"
+            ><i class="far fa-user fa-2x"></i
+          ></a>
+        </li>
+        <li class="nav__btn">
+          <a class="nav__link" href="chats.html">
+            <span class="nav__notification badge">1</span>
+            <i class="far fa-comment fa-2x"></i
+          ></a>
+        </li>
+        <li class="nav__btn">
+          <a class="nav__link" href="find.html"
+            ><i class="fas fa-search fa-2x"></i
+          ></a>
+        </li>
+        <li class="nav__btn">
+          <a class="nav__link" href="more.html">
+            <span class="nav__ellipsis__noti"></span>
+            <i class="fas fa-ellipsis-h fa-2x"></i
+          ></a>
+        </li>
+      </ul>
+    </nav>
+
+    <!-- 코드킷 자바스크립트, From awesome font site -->
+    <script
+      src="https://kit.fontawesome.com/17a0ba892b.js"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+  <!-- 바디 끝 -->
+</html>

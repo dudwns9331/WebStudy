@@ -15,6 +15,7 @@
 /* Srcreens */
 @import "screens/login.css";
 @import "screens/friends.css";
+@import "screens/find.css";
 
 /* font-family 이용 기본 글꼴 사용 모두 적용될 수 있는 것만 남긴다.*/
 body {
