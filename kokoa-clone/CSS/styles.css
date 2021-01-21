@@ -7,11 +7,18 @@
 
 /* Components */
 @import "components/status-bar.css";
+@import "components/nav-bar.css";
+@import "components/screen-header.css";
+@import "components/user-component.css";
 
 /* Srcreens */
 @import "screens/login.css";
+@import "screens/friends.css";
 
 /* font-family 이용 기본 글꼴 사용 모두 적용될 수 있는 것만 남긴다.*/
 body {
+  color: #2e363e;
+  padding-top: 20px;
   font-family: "Open Sans", sans-serif;
+  height: 1000vh;
 }

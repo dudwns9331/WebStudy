@@ -1,1 +1,124 @@
-hello this is friends
+<!DOCTYPE html>
+<html lang="kr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Freinds - Kokoa Clone</title>
+
+    <link rel="stylesheet" href="CSS/styles.css" />
+  </head>
+  <!-- 헤드 끝 -->
+
+  <body>
+    <div class="status-bar">
+      <!-- 클래스 이름을 지어줄 때 부모 자식의 명시 BEM(Block-Element-Modifier)방식-->
+      <div class="status-bar__column">
+        <span>No service</span>
+        <!-- awesome font site 에서 가져온 아이콘 -->
+        <i class="fas fa-wifi"></i>
+      </div>
+      <div class="status-bar__column">
+        <span>18:43</span>
+      </div>
+      <div class="status-bar__column">
+        <span>110%</span>
+        <!-- 배터리 만땅 아이콘 -->
+        <i class="fas fa-battery-full fa-lg"></i>
+        <!-- 전기 아이콘 -->
+        <i class="fas fa-bolt"></i>
+      </div>
+    </div>
+
+    <!-- 스크린 헤더 Freinds, icons -->
+    <header class="screen-header">
+      <h1 class="screen-header__title">Freinds</h1>
+      <div class="screen-header__icons">
+        <span><i class="fas fa-search fa-lg"></i></span>
+        <span><i class="fas fa-music fa-lg"></i></span>
+        <span><i class="fas fa-cog fa-lg"></i></span>
+      </div>
+    </header>
+
+    <!-- Freinds' Names Display -->
+    <a id="friends-display-link">
+      <i class="fas fa-info-circle"></i> Freinds' Names Display
+      <i class="fas fa-chevron-right fa-xs"></i>
+    </a>
+
+    <!-- friends-screen -->
+    <main class="friends-screen">
+      <!-- user component -->
+      <div class="user-component">
+        <div class="user-component__column">
+          <img
+            src="https://avatars1.githubusercontent.com/u/53427147?s=400&u=73f38bc896b7ce68fcb8557ce2927fcfb689a2e1&v=4"
+            class="user-component__avatar user-component__avatar--xl"
+          />
+          <div class="user-component__text">
+            <h4 class="user-component__title">YeongJun</h4>
+            <!-- <h6 class="user-component__subtitle">this text whatever</h6> -->
+          </div>
+        </div>
+        <div class="user-component__column"></div>
+      </div>
+      <!-- friends-screen channel -->
+      <div class="friends-screen__channel">
+        <!-- friends-screen__channel header -->
+        <div class="freinds-screen__channel-header">
+          <span>Channel</span>
+          <i class="fas fa-chevron-up fa-xs"></i>
+        </div>
+        <div class="user-component">
+          <div class="user-component__column">
+            <img
+              src="https://avatars1.githubusercontent.com/u/53427147?s=400&u=73f38bc896b7ce68fcb8557ce2927fcfb689a2e1&v=4"
+              class="user-component__avatar user-component__avatar--sm"
+            />
+            <div class="user-component__text">
+              <h4 class="user-component__title user-component__title--not-bold">
+                Channel
+              </h4>
+            </div>
+          </div>
+          <div class="user-component__column">
+            <span>2</span>
+            <i class="fas fa-chevron-right fa-xs"></i>
+          </div>
+        </div>
+      </div>
+    </main>
+
+    <!-- 네비게이션 바 -->
+    <nav class="nav">
+      <ul class="nav__list">
+        <li class="nav__btn">
+          <a class="nav__link" href="friends.html"
+            ><i class="fas fa-user fa-2x"></i
+          ></a>
+        </li>
+        <li class="nav__btn">
+          <a class="nav__link" href="#">
+            <span class="nav__notification">1</span>
+            <i class="far fa-comment fa-2x"></i
+          ></a>
+        </li>
+        <li class="nav__btn">
+          <a class="nav__link" href="#"><i class="fas fa-search fa-2x"></i></a>
+        </li>
+        <li class="nav__btn">
+          <a class="nav__link" href="#">
+            <span class="nav__ellipsis__noti"></span>
+            <i class="fas fa-ellipsis-h fa-2x"></i
+          ></a>
+        </li>
+      </ul>
+    </nav>
+
+    <!-- 코드킷 자바스크립트, From awesome font site -->
+    <script
+      src="https://kit.fontawesome.com/17a0ba892b.js"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+  <!-- 바디 끝 -->
+</html>

@@ -4,6 +4,10 @@
   display: flex;
   justify-content: center;
   padding: 5px 3px;
+  top: 0;
+  width: 100%;
+  position: fixed;
+  background-color: white;
 }
 /* cetner을 사용했으므로 33%으로 나눠준다. */
 .status-bar__column {

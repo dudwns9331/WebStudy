@@ -1,0 +1,53 @@
+.nav {
+  /* 스크롤 하더라도 붙어있도록 position 설정 bottom : 0이면 아래 */
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  background-color: #f9f9fa;
+  padding: 20px 50px;
+  /* 구성 요소를 위한 픽셀을 살리기 위해서 padding 만큼 요소를 늘리기 때문에 밀리는 현상*/
+  /* box-sizing으로 조절이 가능하다. */
+  box-sizing: border-box;
+  border-top: 1px solid rgba(121, 121, 121, 0.3);
+}
+
+.nav__list {
+  display: flex;
+  justify-content: space-between;
+}
+
+.nav__link {
+  /* 포지션을 쓰려면 부모에 상대적으로 연관이 되어 있어야 한다 */
+  position: relative;
+  color: #2e363e;
+}
+
+.nav__notification {
+  background-color: tomato;
+  width: 20px;
+  height: 20px;
+  border-radius: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  font-weight: 600;
+  /* 아이콘 위에 숫자를 올리는 작업 */
+  /* position은 겹치게 올리는 방법으로 가장 가까운 position relative를 기준으로 배치 */
+  position: absolute;
+  left: 20px;
+  bottom: 20px;
+}
+
+.nav__ellipsis__noti {
+  background-color: tomato;
+  width: 5px;
+  height: 5px;
+  border-radius: 2.5px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  left: 35px;
+  bottom: 30px;
+}
