@@ -20,6 +20,7 @@
 @import "screens/find.css";
 @import "screens/more.css";
 @import "screens/settings.css";
+@import "screens/chat.css";
 
 /* font-family 이용 기본 글꼴 사용 모두 적용될 수 있는 것만 남긴다.*/
 body {
