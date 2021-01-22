@@ -28,3 +28,32 @@
   margin-bottom: 30px;
   color: rgba(0, 0, 0, 0.5);
 }
+
+@keyframes HideSplashScreen {
+  from {
+    opacity: 1;
+  }
+  to {
+    /* 애니메이션의 마지막 값 */
+    opacity: 0;
+    /* 이걸로 html에서 무시하도록 한다. */
+    visibility: hidden;
+  }
+}
+
+#splash-screen {
+  position: absolute;
+  background-color: var(--yellow);
+  height: 100%;
+  width: 100%;
+  top: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 122px;
+  /* 애니메이션을 보여주고 forwards 키워드로 마지막 값을 기억한다. */
+  animation: HideSplashScreen 0.3s ease-in-out forwards;
+  /* 사라지는게 더 빠르다. */
+  /* 애니메이션 딜레이 */
+  animation-delay: 0.7s;
+}

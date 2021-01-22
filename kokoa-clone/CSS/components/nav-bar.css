@@ -22,12 +22,25 @@
   color: #2e363e;
 }
 
+@keyframes notificationAnimation {
+  0% {
+    transform: none;
+  }
+  50% {
+    transform: translateY(-3px) rotateY(360deg);
+  }
+  100% {
+    transform: none;
+  }
+}
+
 .nav__notification {
   /* 아이콘 위에 숫자를 올리는 작업 */
   /* position은 겹치게 올리는 방법으로 가장 가까운 position relative를 기준으로 배치 */
   position: absolute;
   left: 20px;
   bottom: 20px;
+  animation: notificationAnimation 2s ease-in-out infinite;
 }
 
 .nav__ellipsis__noti {
@@ -41,4 +54,32 @@
   position: absolute;
   left: 35px;
   bottom: 30px;
+}
+
+@keyframes appearBtnAnimation {
+  from {
+    opacity: 0;
+  }
+  to {
+    transform: none;
+    opacity: 1;
+  }
+}
+
+.nav__btn {
+  transform: translateY(50px);
+  opacity: 0;
+  animation: appearBtnAnimation 0.2s ease-in-out forwards;
+}
+
+.nav__btn:nth-child(2) {
+  animation-delay: 0.1s;
+}
+
+.nav__btn:nth-child(3) {
+  animation-delay: 0.2s;
+}
+
+.nav__btn:last-child {
+  animation-delay: 0.3s;
 }

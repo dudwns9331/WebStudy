@@ -98,3 +98,24 @@
 .open-post__heart-count span {
   margin-left: 3px;
 }
+
+@keyframes haertBeat {
+  0% {
+    color: wheat;
+  }
+
+  50% {
+    color: tomato;
+    transform: scale(2);
+  }
+
+  100% {
+    color: wheat;
+  }
+}
+
+.open-post__heart-count:hover i {
+  /* 브라우저에게 변하는것을 미리 설명해준다. 그래픽카드의 가속을 위함 */
+  will-change: transform;
+  animation: haertBeat 0.5s linear infinite;
+}

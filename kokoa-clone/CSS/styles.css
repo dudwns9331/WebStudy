@@ -13,6 +13,7 @@
 @import "components/badge.css";
 @import "components/icon-row.css";
 @import "components/alt-screen-header.css";
+@import "components/no-mobile.css";
 
 /* Srcreens */
 @import "screens/login.css";
