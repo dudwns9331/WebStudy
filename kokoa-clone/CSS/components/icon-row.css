@@ -1,0 +1,21 @@
+.icon-row {
+  display: flex;
+  justify-content: space-between;
+}
+
+.icon-row__icon {
+  display: flex;
+  /* row는 옆에 오는 것이고 column은 아래 오는 것이다. */
+  flex-direction: column;
+  /* Cross Axis와 Main Axis가 바뀌었다. flex-direction: column; 이기 때문에 */
+  /* 여기서 Main Axis가 세로로 바뀌었기 때문에  Cross Axis를 바꾸기 위해 사용*/
+  align-items: center;
+}
+
+.icon-row__icon i {
+  font-size: 35px;
+}
+
+.icon-row__icon span {
+  margin-top: 18px;
+}
