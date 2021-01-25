@@ -168,7 +168,7 @@
 
 1. ## margin
 
-![layout](https://github.com/dudwns9331/WebStudy/blob/master/kokoa-clone/Details/screens/layout)
+![layout](https://github.com/dudwns9331/WebStudy/blob/master/kokoa-clone/Details/images/layout.PNG)
 
 `margin`은 content를 이루는 요소중에 border 바깥에 해당하는 부분이다. content는 보통 box 형식으로 block의 형태를 띈다. 따라서 content 들의 사이 공간을 조절하고 싶으면 `margin`을 통해서 조절한다. `margin`은 4개의 부분 top, bottom, right, left로 나누어 px(픽셀)을 단위로 하여 속성값을 줄 수 있다.
 
