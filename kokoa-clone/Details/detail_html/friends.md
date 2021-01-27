@@ -292,7 +292,7 @@ screen의 상단에 해당하는 내용으로 이와 같이 구성되어 있다.
 
 <br/>
 
-![nav](https://github.com/dudwns9331/WebStudy/blob/master/kokoa-clone/Details/images/friends-display-link.PNG)
+![nav](https://github.com/dudwns9331/WebStudy/blob/master/kokoa-clone/Details/images/nav.PNG)
 
 </br>
 스크린의 하단에 해당하는 내용으로 이와 같이 구성되어 있다.
