@@ -165,7 +165,12 @@
 </header>
 ```
 
-screen의 상단에 해당하는 내용으로 ![screen](https://github.com/dudwns9331/WebStudy/blob/master/kokoa-clone/Details/images/freinds-screen-header.PNG) 이와 같이 구성되어 있다.
+<br/>
+
+![screen](https://github.com/dudwns9331/WebStudy/blob/master/kokoa-clone/Details/images/friends-screen-header.PNG)
+
+<br/>
+screen의 상단에 해당하는 내용으로 이와 같이 구성되어 있다.
 
 <br/>
 
@@ -182,7 +187,12 @@ screen의 상단에 해당하는 내용으로 ![screen](https://github.com/dudwn
 </a>
 ```
 
-screen의 상단에 해당하는 내용으로 ![freinds-display-link](https://github.com/dudwns9331/WebStudy/blob/master/kokoa-clone/Details/images/friends-display-link.PNG) 이와 같이 구성되어 있다.
+<br/>
+
+![freinds-display-link](https://github.com/dudwns9331/WebStudy/blob/master/kokoa-clone/Details/images/friends-display-link.PNG)
+
+<br/>
+screen의 상단에 해당하는 내용으로 이와 같이 구성되어 있다.
 <br/>
 
 `<a>` 태그를 이용해서 링크를 걸어주는 방식으로 설정되어 있지만 해당 프로젝트에서는 아직 링크를 연결하여 친구를 찾는 페이지를 구성하지 않았다.
@@ -280,7 +290,12 @@ screen의 상단에 해당하는 내용으로 ![freinds-display-link](https://gi
 </nav>
 ```
 
-스크린의 하단에 해당하는 내용으로 ![nav](https://github.com/dudwns9331/WebStudy/blob/master/kokoa-clone/Details/images/friends-display-link.PNG) 이와 같이 구성되어 있다.
+<br/>
+
+![nav](https://github.com/dudwns9331/WebStudy/blob/master/kokoa-clone/Details/images/friends-display-link.PNG)
+
+</br>
+스크린의 하단에 해당하는 내용으로 이와 같이 구성되어 있다.
 
 <br/>
 
