@@ -36,7 +36,7 @@
   2. [**`header`** (`class="welcome-header"`)](#header__welcome-header)
   3. [**`form`** (`action="friends.html"`)](#form__friends.html)
   4. [**`div`** (`id="no-mobile"`)](#div__id)
-  5. [**`script`** (`fontadwesome`)](#script)
+  5. [**`script`** (`fontawesome`)](#script)
 
 - _**바디에 해당하는 코드**_
 
@@ -111,13 +111,6 @@
   2. link의 href는 hypertext reference로 href는 link 뿐만 아니라 연결하려고 하는 파일의 하이퍼링크 주소를 설정하게 된다.
 
 ## body
-
-<!--
-1. [**`div`** (`class="status-bar"`)](#div__status-bar)
-  2. [**`head`** (`class="welcome-header"`)](#head__welcome-header)
-  3. [**`form`** (`action="friends.html"`)](#form__friends.html)
-  4. [**`div`** (`id="no-mobile"`)](#div__id)
-  5. [**`script`** (`fontadwesome`)](#script) -->
 
 - ### div\_\_status-bar
 
