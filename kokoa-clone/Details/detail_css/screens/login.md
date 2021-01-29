@@ -1,4 +1,4 @@
-# Detail of index.html
+# Detail of login.css
 
 ## Basic of CSS
 
@@ -263,3 +263,5 @@
 11. ## text-decoration
 
 `text-decoration`은 html의 a 태그와같이 링크를 표시하고 색이 변하는 text 부분을 변경할 수 있는 속성이다.
+
+---
