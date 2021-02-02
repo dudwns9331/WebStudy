@@ -201,7 +201,7 @@
 <br/>
 <br/>
 
-![screen](https://github.com/dudwns9331/WebStudy/blob/master/kokoa-clone/Details/user-component-more.PNG)
+![screen](https://github.com/dudwns9331/WebStudy/blob/master/kokoa-clone/Details/images/user-component-more.PNG)
 
 <br/>
 이와 같은 user-component 구성을 가지고 있다.
@@ -235,7 +235,7 @@
 <br/>
 <br/>
 
-![screen](https://github.com/dudwns9331/WebStudy/blob/master/kokoa-clone/Details/icon-row-more.PNG)
+![screen](https://github.com/dudwns9331/WebStudy/blob/master/kokoa-clone/Details/images/icon-row-more.PNG)
 
 <br/>
 이와 같은 icon-row 구성을 가지고 있다.
@@ -268,7 +268,7 @@
 <br/>
 <br/>
 
-![screen](https://github.com/dudwns9331/WebStudy/blob/master/kokoa-clone/Details/suggestions.PNG)
+![screen](https://github.com/dudwns9331/WebStudy/blob/master/kokoa-clone/Details/images/suggestions.PNG)
 
 <br/>
 

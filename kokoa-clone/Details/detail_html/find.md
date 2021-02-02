@@ -223,7 +223,7 @@
 <br/>
 <br/>
 
-![screen](https://github.com/dudwns9331/WebStudy/blob/master/kokoa-clone/Details/images/recomended-friends.PNG)
+![screen](https://github.com/dudwns9331/WebStudy/blob/master/kokoa-clone/Details/images/recommended-friends.PNG)
 
 <br/>
 
