@@ -1,4 +1,4 @@
-# Detail of index.html
+# Detail of friends.html
 
 ## Basic of HTML
 
@@ -135,6 +135,8 @@
   ></script>
 </body>
 ```
+
+---
 
 ## _**구성 요소 설명**_
 
