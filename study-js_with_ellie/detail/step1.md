@@ -57,7 +57,7 @@ console.log("hello World");
 
 <br/>
 
-![asyn](https://github.com/dudwns9331/WebStudy/study-js_with_ellie/detail/images/asyn.PNG)
+![asyn](https://github.com/dudwns9331/WebStudy/blob/master/study-js_with_ellie/detail/images/asyn.PNG)
 
 <br/>
 
@@ -76,7 +76,7 @@ console.log("hello World");
 
 <br/>
 
-![asyn](https://github.com/dudwns9331/WebStudy/study-js_with_ellie/detail/images/defer.PNG)
+![asyn](https://github.com/dudwns9331/WebStudy/blob/master/study-js_with_ellie/detail/images/defer.PNG)
 
 <br/>
 
