@@ -1,4 +1,4 @@
-# Detail of find.html
+# Detail of settings.html
 
 ## Basic of HTML
 
