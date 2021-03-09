@@ -222,7 +222,7 @@ console.log(null === undefined); // false
 <br/>
 <br/>
 
-![reference](https://github.com/dudwns9331/WebStudy/blob/master/study-js_with_ellie/detail/images/com_reference.PNG)
+![reference](https://github.com/dudwns9331/WebStudy/blob/master/study-js_with_ellie/detail/images/com_reference.png)
 
 <br/>
 object는 메모리에 탑제 될 때, 주소가 저장되므로 같은 data를 할당 해도 비교시 false가 된다.
