@@ -1,21 +1,76 @@
-"use strict";
+# Javascript detail step3
 
-// 1. String concatenation
+- ## _**README**_
+
+이 정리는 [youtube 드림코딩 엘리](https://www.youtube.com/watch?v=tJieVCgGzhs&list=PLv2d7VI9OotTVOL4QmPfvJWPJvkmv6h-2&index=2)님의 강의를 바탕으로 정리한 것입니다.
+
+---
+
+- ## 연산과 반복문
+
+<br/>
+
+- ### String Concatenation
+
+```js
 console.log("my" + " cat");
 console.log("1" + 2);
 console.log(`string literals: 1 + 2 = ${1 + 2}`);
+```
 
-// 2. Numeric operators
+<br/>
 
+```
+출력 결과
+
+my cat
+12
+string literals: 1 + 2 = 3
+```
+
+<br/>
+
+JavaScript에서는 `String Concatenation`이 가능하다. 그 유형은 `'string' + 'string'` 형식으로 가능하고 `'string' + number` 형식으로 묶어서 자동적인 형변환이 가능하다. 이의 결과 값은 'stringnumber' 형식으로 string으로 형변환 되어 표시된다.
+`backtick` 기호를 이용해서 하나로 묶고 `${var}` 형식을 사용해 변수를 표현 가능하다.
+
+[backtick 및 string format 표현 방식 자세히 알아보기](https://developer.mozilla.org/ko/docs/Web/JavaScript/Reference/Template_literals)
+
+<br/>
+<br/>
+
+- ### Numeric Operators
+
+```js
 console.log(1 + 1); // add
 console.log(1 - 1); // substract
 console.log(1 / 1); // divide
 console.log(1 * 1); // multiply
 console.log(5 % 2); // remainder
 console.log(2 ** 3); // exponent
+```
 
-// 3. Increment and decrement operators
+<br/>
 
+```
+출력 결과
+
+ 0
+ 1
+ 1
+ 1
+ 8
+```
+
+<br/>
+
+`**` 연산을 통해서 exponent 연산을 할 수 있다.
+
+<br/>
+<br/>
+
+- ### Increment and decrement operators
+
+```js
 let counter = 2;
 const preIncrement = ++counter;
 // counter = counter + 1
@@ -26,8 +81,27 @@ console.log(`preIncrement : ${preIncrement}, counter : ${counter}`);
 // counter = counter + 1
 const postIncrement = counter++;
 console.log(`preIncrement : ${postIncrement}, counter : ${counter}`);
+```
 
-// 4. Assignment operators
+<br/>
+
+```
+출력 결과
+
+preIncrement : 3, counter : 3
+preIncrement : 3, counter : 4
+```
+
+<br/>
+
+`++` 기호를 통해서 전위 증감연산과 후위 증감 연산으로 구분할 수 있다.
+
+<br/>
+<br/>
+
+- ### Assignment operators
+
+```js
 let x = 3;
 let y = 6;
 
@@ -35,15 +109,41 @@ x += y; // x = x + y;
 x -= y;
 x *= y;
 x /= y;
+```
 
-// 5. Comparison operators
+<br/>
 
+let으로 변수를 선언하고 다음과 같은 연산들이 가능하다.
+
+<br/>
+<br/>
+
+- ### Comparison operators
+
+```js
 console.log(10 < 6); // less than
 console.log(10 <= 6); // less than or equal
 console.log(10 > 6); // greater than
 console.log(10 >= 6); // greater than or equal
+```
 
-// 6. Logical operators: || (or), && (and), ! (not)
+<br/>
+
+```
+출력 결과
+
+false
+false
+true
+true
+```
+
+<br/>
+<br/>
+
+- ### Logical operators: || (or), && (and), ! (not)
+
+```js
 const value1 = false;
 const value2 = 4 < 2;
 
@@ -72,9 +172,16 @@ function check() {
 }
 
 // ! (not)
+// 값 부정
 console.log(!value1);
+```
 
-// 7. Equality
+<br/>
+<br/>
+
+- ### Equality
+
+```js
 const stringFive = "5";
 const numberFive = 5;
 
@@ -110,10 +217,21 @@ console.log("" == false); // true
 console.log("" === false); // false
 console.log(null == undefined); // true
 console.log(null === undefined); // false
+```
 
-//  8. Conditional operaors : if
-//  if, else if, else
+<br/>
+<br/>
 
+![reference](https://github.com/dudwns9331/WebStudy/blob/master/study-js_with_ellie/detail/images/com_reference.PNG)
+
+<br/>
+object는 메모리에 탑제 될 때, 주소가 저장되므로 같은 data를 할당 해도 비교시 false가 된다.
+<br/>
+<br/>
+
+- ### Conditional operaors : if, else if, else
+
+```js
 console.log("* if, else if, else");
 
 const name = "hi";
@@ -124,13 +242,23 @@ if (name === "YJ") {
 } else {
   console.log("unknown");
 }
+```
 
-// 9. Ternary operator: ?
-// condition ? value1 : value2;
+<br/>
+<br/>
 
+- ### Ternary operator: ? -> condition ? value1 : value2;
+
+```js
 console.log(name === "YJ" ? "yes" : "no");
+```
 
-// 10. Switch statement
+<br/>
+<br/>
+
+- ### Switch statement
+
+```js
 // use for multiple if checks
 // use for enum-like value check
 // use for multiple type checks in TS
@@ -150,8 +278,14 @@ switch (browser) {
     console.log("same all!");
     break;
 }
+```
 
-// 11. Loops
+<br/>
+<br/>
+
+- ### Loops & Question
+
+```js
 // while loop, while the condition is true,
 // body code is executed.
 
@@ -197,3 +331,4 @@ for (let i = 0; i < 11; i++) {
   }
   console.log(`q2. ${i}`);
 }
+```
