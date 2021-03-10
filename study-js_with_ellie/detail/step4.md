@@ -9,8 +9,10 @@
 - ## Function
 
 <p align="center">
-<img src="https://github.com/dudwns9331/WebStudy/blob/master/study-js_with_ellie/detail/images/function_ex1.PNG">
-<img src="https://github.com/dudwns9331/WebStudy/blob/master/study-js_with_ellie/detail/images/function_ex2.PNG"><img src="https://github.com/dudwns9331/WebStudy/blob/master/study-js_with_ellie/detail/images/function_ex3.PNG"><img src="https://github.com/dudwns9331/WebStudy/blob/master/study-js_with_ellie/detail/images/function_ex4.PNG">
+<img src="https://github.com/dudwns9331/WebStudy/blob/master/study-js_with_ellie/detail/images/function_ex1.png">
+<img src="https://github.com/dudwns9331/WebStudy/blob/master/study-js_with_ellie/detail/images/function_ex2.png">
+<img src="https://github.com/dudwns9331/WebStudy/blob/master/study-js_with_ellie/detail/images/function_ex3.png">
+<img src="https://github.com/dudwns9331/WebStudy/blob/master/study-js_with_ellie/detail/images/function_ex4.png">
 </p>
 
 <br/>
