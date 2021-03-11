@@ -11,16 +11,16 @@ p# Javascript detail step8
 <br/>
 
 <p align="center">
-<img src="https://github.com/dudwns9331/WebStudy/blob/master/study-js_with_ellie/detail/images/JSON_ex1.png" height="180px" width="250px">
-<img src="https://github.com/dudwns9331/WebStudy/blob/master/study-js_with_ellie/detail/images/JSON_ex2.png" height="180px" width="250px">
+<img src="https://github.com/dudwns9331/WebStudy/blob/master/study-js_with_ellie/detail/images/JSON_ex1.png" height="300px" width="500px">
+<img src="https://github.com/dudwns9331/WebStudy/blob/master/study-js_with_ellie/detail/images/JSON_ex2.png" height="300px" width="500px">
 </p>
 
 <br/>
 <br/>
 
 <p align="center">
-<img src="https://github.com/dudwns9331/WebStudy/blob/master/study-js_with_ellie/detail/images/JSON_ex3.png" height="180px" width="250px">
-<img src="https://github.com/dudwns9331/WebStudy/blob/master/study-js_with_ellie/detail/images/JSON_ex4.png" height="180px" width="250px">
+<img src="https://github.com/dudwns9331/WebStudy/blob/master/study-js_with_ellie/detail/images/JSON_ex3.png" height="300px" width="500px">
+<img src="https://github.com/dudwns9331/WebStudy/blob/master/study-js_with_ellie/detail/images/JSON_ex4.png" height="300px" width="500px">
 
 </p>
 
