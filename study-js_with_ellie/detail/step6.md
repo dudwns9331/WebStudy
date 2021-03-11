@@ -1,4 +1,4 @@
-# Javascript detail step5
+# Javascript detail step6
 
 - ## _**README**_
 
