@@ -19,6 +19,7 @@
 - [찾기 페이지](#Find)
 - [부가 기능 페이지](#More)
 - [설정 페이지](#Settings)
+- [상세 코드 설명](#Details)
 
 ---
 
@@ -41,7 +42,7 @@
 
 <p align="center">
 
-<img src="https://github.com/dudwns9331/WebStudy/blob/master/kokoa-clone/readme_images/Freind">
+<img src="https://github.com/dudwns9331/WebStudy/blob/master/kokoa-clone/readme_images/Freind.PNG">
 
 </p>
 
@@ -56,7 +57,7 @@
 
 <p align="center">
 
-<img src="https://github.com/dudwns9331/WebStudy/blob/master/kokoa-clone/readme_images/Chats">
+<img src="https://github.com/dudwns9331/WebStudy/blob/master/kokoa-clone/readme_images/Chats.PNG">
 
 </p>
 
@@ -71,7 +72,7 @@
 
 <p align="center">
 
-<img src="https://github.com/dudwns9331/WebStudy/blob/master/kokoa-clone/readme_images/Find">
+<img src="https://github.com/dudwns9331/WebStudy/blob/master/kokoa-clone/readme_images/Find.PNG">
 
 </p>
 
@@ -86,7 +87,7 @@
 
 <p align="center">
 
-<img src="https://github.com/dudwns9331/WebStudy/blob/master/kokoa-clone/readme_images/More">
+<img src="https://github.com/dudwns9331/WebStudy/blob/master/kokoa-clone/readme_images/More.PNG">
 
 </p>
 
@@ -101,7 +102,7 @@
 
 <p align="center">
 
-<img src="https://github.com/dudwns9331/WebStudy/blob/master/kokoa-clone/readme_images/Settings">
+<img src="https://github.com/dudwns9331/WebStudy/blob/master/kokoa-clone/readme_images/Settings.PNG">
 
 </p>
 
@@ -111,4 +112,85 @@
 
 ---
 
-해당 프로젝트는 HTML과 CSS의 기본적인 사용법을 익히기 위해서 만들어졌고, 정적 데이터만을 이용해서 표현한 페이지들 입니다. 각 아이콘에 해당하는 기능들은 대부분 구현되지 않았으며, 추후 JavaScript를 추가하여 실제로 작동하는 기능을 추가할 예정입니다.
+<br/>
+
+**_해당 프로젝트는 HTML과 CSS의 기본적인 사용법을 익히기 위해서 만들어졌고, 정적 데이터만을 이용해서 표현한 페이지들 입니다. 각 아이콘에 해당하는 기능들은 대부분 구현되지 않았으며, 추후 JavaScript를 추가하여 실제로 작동하는 기능을 추가할 예정입니다._**
+
+<br/>
+
+---
+
+## Deatils
+
+- [HTML 코드와 설명 바로가기](https://github.com/dudwns9331/WebStudy/tree/master/kokoa-clone/Details/detail_html)
+- [CSS 코드와 설명 바로가기](https://github.com/dudwns9331/WebStudy/tree/master/kokoa-clone/Details/detail_css)
+
+---
+
+## HTML
+
+<br/>
+
+1. [index.html](https://github.com/dudwns9331/WebStudy/blob/master/kokoa-clone/Details/detail_html/index.md)
+
+2. [freinds.html](https://github.com/dudwns9331/WebStudy/blob/master/kokoa-clone/Details/detail_html/friends.md)
+
+3. [chats.html](https://github.com/dudwns9331/WebStudy/blob/master/kokoa-clone/Details/detail_html/chats.md)
+
+4. [chat.html](https://github.com/dudwns9331/WebStudy/blob/master/kokoa-clone/Details/detail_html/chat.md)
+
+5. [find.html](https://github.com/dudwns9331/WebStudy/blob/master/kokoa-clone/Details/detail_html/find.md)
+
+6. [more.html](https://github.com/dudwns9331/WebStudy/blob/master/kokoa-clone/Details/detail_html/more.md)
+
+7. [settings.html](https://github.com/dudwns9331/WebStudy/blob/master/kokoa-clone/Details/detail_html/settings.md)
+
+<br/>
+
+---
+
+## CSS
+
+<br/>
+
+### Basic
+
+1. [styles.css](https://github.com/dudwns9331/WebStudy/blob/master/kokoa-clone/Details/detail_css/styles.md)
+
+2. [reset.css](https://github.com/dudwns9331/WebStudy/blob/master/kokoa-clone/Details/detail_css/reset.md)
+
+---
+
+### screens
+
+1. [login.css](https://github.com/dudwns9331/WebStudy/blob/master/kokoa-clone/Details/detail_css/screens/login.md)
+
+2. [friends.css](https://github.com/dudwns9331/WebStudy/blob/master/kokoa-clone/Details/detail_css/screens/freiends.md)
+
+3. [chat.css](https://github.com/dudwns9331/WebStudy/blob/master/kokoa-clone/Details/detail_css/screens/chat.md)
+
+4. [find.css](https://github.com/dudwns9331/WebStudy/blob/master/kokoa-clone/Details/detail_css/screens/find.md)
+
+5. [more.css](https://github.com/dudwns9331/WebStudy/blob/master/kokoa-clone/Details/detail_css/screens/more.md)
+
+6. [settings.css](https://github.com/dudwns9331/WebStudy/blob/master/kokoa-clone/Details/detail_css/screens/settings.md)
+
+---
+
+### components
+
+1. [alt-screen-header.css](https://github.com/dudwns9331/WebStudy/blob/master/kokoa-clone/Details/detail_css/components/alt-screen-header.md)
+
+2. [badge.css](https://github.com/dudwns9331/WebStudy/blob/master/kokoa-clone/Details/detail_css/components/badge.md)
+
+3. [icon-row.css](https://github.com/dudwns9331/WebStudy/blob/master/kokoa-clone/Details/detail_css/components/icon-row.md)
+
+4. [nav-bar.css](https://github.com/dudwns9331/WebStudy/blob/master/kokoa-clone/Details/detail_css/components/nav-bar.md)
+
+5. [no-mobile.css](https://github.com/dudwns9331/WebStudy/blob/master/kokoa-clone/Details/detail_css/components/no-mobile.md)
+
+6. [screen-header.css](https://github.com/dudwns9331/WebStudy/blob/master/kokoa-clone/Details/detail_css/components/screen-header.md)
+
+7. [status-bar.css](https://github.com/dudwns9331/WebStudy/blob/master/kokoa-clone/Details/detail_css/components/status-bar.md)
+
+8. [user-component.css](https://github.com/dudwns9331/WebStudy/blob/master/kokoa-clone/Details/detail_css/components/user-component.md)
