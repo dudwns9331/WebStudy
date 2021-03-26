@@ -42,7 +42,7 @@
 
 <p align="center">
 
-<img src="https://github.com/dudwns9331/WebStudy/blob/master/kokoa-clone/readme_images/Freind.PNG" height="600px" width="450px">
+<img src="https://github.com/dudwns9331/WebStudy/blob/master/kokoa-clone/readme_images/Friend.PNG" height="600px" width="450px">
 
 </p>
 
