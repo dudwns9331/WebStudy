@@ -27,7 +27,7 @@
 
 <p align="center">
 
-<img src="https://github.com/dudwns9331/WebStudy/blob/master/kokoa-clone/readme_images/Login.PNG">
+<img src="https://github.com/dudwns9331/WebStudy/blob/master/kokoa-clone/readme_images/Login.PNG" height="600px" width="450px">
 
 </p>
 
@@ -42,7 +42,7 @@
 
 <p align="center">
 
-<img src="https://github.com/dudwns9331/WebStudy/blob/master/kokoa-clone/readme_images/Freind.PNG">
+<img src="https://github.com/dudwns9331/WebStudy/blob/master/kokoa-clone/readme_images/Freind.PNG" height="600px" width="450px">
 
 </p>
 
@@ -57,7 +57,7 @@
 
 <p align="center">
 
-<img src="https://github.com/dudwns9331/WebStudy/blob/master/kokoa-clone/readme_images/Chats.PNG">
+<img src="https://github.com/dudwns9331/WebStudy/blob/master/kokoa-clone/readme_images/Chats.PNG" height="600px" width="450px">
 
 </p>
 
@@ -72,7 +72,7 @@
 
 <p align="center">
 
-<img src="https://github.com/dudwns9331/WebStudy/blob/master/kokoa-clone/readme_images/Find.PNG">
+<img src="https://github.com/dudwns9331/WebStudy/blob/master/kokoa-clone/readme_images/Find.PNG" height="600px" width="450px">
 
 </p>
 
@@ -87,7 +87,7 @@
 
 <p align="center">
 
-<img src="https://github.com/dudwns9331/WebStudy/blob/master/kokoa-clone/readme_images/More.PNG">
+<img src="https://github.com/dudwns9331/WebStudy/blob/master/kokoa-clone/readme_images/More.PNG" height="600px" width="450px">
 
 </p>
 
@@ -102,7 +102,7 @@
 
 <p align="center">
 
-<img src="https://github.com/dudwns9331/WebStudy/blob/master/kokoa-clone/readme_images/Settings.PNG">
+<img src="https://github.com/dudwns9331/WebStudy/blob/master/kokoa-clone/readme_images/Settings.PNG" height="600px" width="450px">
 
 </p>
 
