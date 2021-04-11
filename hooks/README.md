@@ -2,7 +2,7 @@
 
 - React Hooks의 기본적인 개념과 10가지 Hook 구현
 
-[img](https://github.com/dudwns9331/WebStudy/tree/master/Hooks/Title.png)
+![img](https://github.com/dudwns9331/WebStudy/blob/master/hooks/Title.PNG)
 
 [실전형 리액트 Hooks 10개 강의 바로가기](https://nomadcoders.co/react-hooks-introduction)
 
