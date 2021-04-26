@@ -18,3 +18,5 @@ const countModifier = (state = 0) => {
 const countStore = createStore(countModifier);
 
 console.log(countStore.getState());
+
+console.log("hi");
