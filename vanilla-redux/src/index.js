@@ -1,62 +1,100 @@
 import { createStore } from "redux";
 
-// Store는 데이터를 저장하는 저장소를 생성한다.
+const form = document.querySelector("form");
+const input = document.querySelector("input");
+const ul = document.querySelector("ul");
 
-const add = document.getElementById("add");
-const minus = document.getElementById("minus");
-const number = document.querySelector("span");
+const ADD_TODO = "ADD_TODO";
+const DELETE_TODO = "DELETE_TODO";
 
-const ADD = "ADD";
-const MINUS = "MINUS";
+// MUTATE STATE는 절대 사용하면 안된다. => ?
+// https://redux.js.org/understanding/thinking-in-redux/three-principles => 리덕스 세 가지 원칙
 
-// 2. Store를 만들기 위해서는 함수형태의 reducer가 필요하다.
-// 3. reducer는 data를 수정하는 함수이다.
+// Store를 수정할 때는 reducer를 통해서만 진행한다. read-Only
+// 새로운 array를 return 하도록 한다. => 새로운 state를 리턴하는 것임..
 
-// 유일하게 데이터를 바꿀 수 있는 곳
-const countModifier = (count = 0, action) => {
-  // 이 변수가 리턴하는 값은 모두 data가 된다.
-  // 즉, 리턴하는 값은 현재의 상태를 의미기 때문에 count 라는 상태에 계속해서 저장이 된다.
-  // 무엇을 리턴하든지 그 에플리케이션의 상태가 된다.
+// reducer의 action들을 함수로 만들어 리턴만 한다.
 
-  // 상태를 controll 할때는 case문을 사용하는것이 좋다.
+const addToDo = (text) => {
+  return {
+    type: ADD_TODO,
+    text,
+  };
+};
 
+const deleteToDo = (id) => {
+  return {
+    type: DELETE_TODO,
+    id,
+  };
+};
+
+// Store의 정보를 다루는 reducer.
+// 상태의 변경은 reducer에서만 이루어진다.
+
+const reducer = (state = [], action) => {
   switch (action.type) {
-    case ADD:
-      return count + 1;
-    case MINUS:
-      return count - 1;
+    case ADD_TODO:
+      // ES6 Spread => 모든 배열의 내용을 가져온다.
+      // 순서를 수정 가능하다. 새로운 상태를 리턴하기 때문이다.
+      const newToDoObj = { text: action.text, id: Date.now() };
+      return [...state, newToDoObj];
+
+    // https://developer.mozilla.org/ko/docs/Web/JavaScript/Reference/Global_Objects/Array/filter
+    // array에서 element를 삭제하는 방법
+    case DELETE_TODO:
+      const cleaned = state.filter((toDo) => toDo.id !== action.id);
+      return cleaned;
     default:
-      return count;
+      return state;
   }
 };
+const store = createStore(reducer);
 
-// Store를 생성한다.
-const countStore = createStore(countModifier);
+store.subscribe(() => console.log(store.getState()));
 
-const onChange = () => {
-  number.innerText = countStore.getState();
+// 리스트에 할 일을 추가하는 함수
+const dispatchAddToDo = (text) => {
+  store.dispatch(addToDo(text));
 };
 
-// subscribe를 통해서 상태 변화에 대한 반응을 설정할 수 있다.
-// event 발생시 호출되는 함수임.
-countStore.subscribe(onChange);
-
-// countStroe => dispathch : f, subscribe : f, replaceReducer : f, Symbol : f
-
-// Store에 dispatch를 할 경우 countModifier를 호출하게 된다.
-// countStore.dispatch({ type: "ADD" });
-// countStore.dispatch({ type: "MINUS" });
-
-const handleAdd = () => {
-  // Actions must be plain objects.
-  countStore.dispatch({ type: ADD });
+const dispatchdeleteToDo = (e) => {
+  const id = parseInt(e.target.parentNode.id);
+  store.dispatch(deleteToDo(id));
 };
 
-const handleMinus = () => {
-  countStore.dispatch({ type: MINUS });
+// 리스트를 그려주는 함수
+const paintToDos = () => {
+  const toDos = store.getState();
+  ul.innerHTML = "";
+
+  toDos.forEach((toDo) => {
+    const li = document.createElement("li");
+    const button = document.createElement("button");
+
+    button.innerText = "X";
+    button.addEventListener("click", dispatchdeleteToDo);
+
+    // id, text 지정
+    li.id = toDo.id;
+    li.innerText = toDo.text;
+
+    // 리스트에 버튼 추가
+    li.appendChild(button);
+
+    // 리스트에 항목 추가
+    ul.appendChild(li);
+  });
 };
 
-add.addEventListener("click", handleAdd);
-minus.addEventListener("click", handleMinus);
+store.subscribe(paintToDos);
 
-// Store의 상태를 가져오는 것 getState()
+// 제출 했을 때 호출되는 함수
+const onSubmit = (e) => {
+  e.preventDefault();
+  const toDo = input.value;
+  input.value = "";
+  dispatchAddToDo(toDo);
+};
+
+form.addEventListener("submit", onSubmit);
