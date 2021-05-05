@@ -6,7 +6,8 @@
 
 <p align="center">
 
-<img src="https://github.com/dudwns9331/WebStudy/blob/master/ReactJS/Title.PNG" height="600px" width="450px">
+<img src="https://github.com/dudwns9331/WebStudy/blob/master/ReactJS/images/title.PNG" height="600px" width="450px">
+
 </p>
 
 <br/>
