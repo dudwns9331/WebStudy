@@ -4,7 +4,18 @@ Learning React and ES6 by buliding a Moive Discovery App.
 
 ## Screens
 
-- [] Home
-- [] TV
-- [] Search
-- [] Detail
+- [ ] Home
+- [ ] TV
+- [ ] Search
+- [ ] Detail
+
+## API Verbs
+
+- [x] Now Playing (Movie)
+- [x] Upcoming (Movie)
+- [x] Top Rated (TV, Movie)
+- [x] popular (TV, Movie)
+- [x] Airing Today (TV)
+- [x] TV Show Detail
+- [x] Moive Detail
+- [x] Search (TV, Moive)
