@@ -18,18 +18,18 @@
 
 ## **index**
 
-[ ] **[1. Fundamentals & Additional information](https://github.com/dudwns9331/WebStudy/tree/master/ReactJS/Fundamentals/Details)**
+- [ ] **[1. Fundamentals & Additional information](https://github.com/dudwns9331/WebStudy/tree/master/ReactJS/Fundamentals/Details)**
 
-[x] **[2. Project_Setup](https://github.com/dudwns9331/WebStudy/blob/master/ReactJS/Project_Setup.md)**
+- [x] **[2. Project_Setup](https://github.com/dudwns9331/WebStudy/blob/master/ReactJS/Project_Setup.md)**
 
-[x] **[3. Styled_Detail](https://github.com/dudwns9331/WebStudy/blob/master/ReactJS/Project_Setup.md)**
+- [x] **[3. Styled_Detail](https://github.com/dudwns9331/WebStudy/blob/master/ReactJS/Project_Setup.md)**
 
-[x] **[4. Networking](https://github.com/dudwns9331/WebStudy/blob/master/ReactJS/Networking.md)**
+- [x] **[4. Networking](https://github.com/dudwns9331/WebStudy/blob/master/ReactJS/Networking.md)**
 
-[ ] **5. Containers**
+- [ ] **5. Containers**
 
-[ ] **6. Presenters**
+- [ ] **6. Presenters**
 
-[ ] **7. Deployment**
+- [ ] **7. Deployment**
 
-[ ] **8. Bonus : Typescript with React**
+- [ ] **8. Bonus : Typescript with React**
