@@ -19,13 +19,17 @@ export default class extends React.Component {
       const {
         data: { results: popular },
       } = await tvApi.popular();
+
+      // 에러 체크
+      // throw Error();
+
       const {
         data: { results: airingToday },
       } = await tvApi.airingToday();
 
       this.setState({ topRated, popular, airingToday });
     } catch {
-      this.setState({ erorr: "Can't find TV information" });
+      this.setState({ error: "Can't find TV information" });
     } finally {
       this.setState({ loading: false });
     }
@@ -33,7 +37,7 @@ export default class extends React.Component {
 
   render() {
     const { topRated, popular, airingToday, error, loading } = this.state;
-    console.log(this.state);
+    // console.log(this.state);
     return (
       <TVPresenter
         topRated={topRated}
