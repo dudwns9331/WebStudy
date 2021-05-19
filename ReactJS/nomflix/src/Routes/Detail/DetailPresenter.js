@@ -5,6 +5,7 @@ import Loader from "Components/Loader";
 import noPoster from "assets/noPosterSmall.png";
 
 import Helmet from "react-helmet";
+import Videos from "Components/Videos";
 
 const Container = styled.div`
   height: calc(100vh - 50px);
@@ -64,11 +65,17 @@ const Divider = styled.span`
 `;
 
 const Overview = styled.p`
-  font-size: 20px;
+  font-size: 13px;
   opacity: 0.7;
   line-height: 1.5;
-  width: 50%;
+  width: 70%;
+  margin-bottom: 20px;
 `;
+
+// const Videos = styled.iframe`
+//   width: 70%;
+//   height: 70%;
+// `;
 
 const DetailPresenter = ({ result, error, loading }) =>
   loading ? (
@@ -123,6 +130,14 @@ const DetailPresenter = ({ result, error, loading }) =>
             </Item>
           </ItemContainer>
           <Overview>{result.overview}</Overview>
+          {/* <Videos
+            src={`https://www.youtube.com/embed/${result.videos.results[0].key}`}
+          ></Videos> */}
+          <Videos
+            videoUrl={result.videos.results[0].key}
+            name={result.videos.results[0].name}
+            type={result.videos.results[0].type}
+          ></Videos>
         </Data>
       </Content>
     </Container>
