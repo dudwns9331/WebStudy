@@ -4,10 +4,10 @@ Learning React and ES6 by buliding a Moive Discovery App.
 
 ## Screens
 
-- [ ] Home
-- [ ] TV
-- [ ] Search
-- [ ] Detail
+- [x] Home
+- [x] TV
+- [x] Search
+- [x] Detail
 
 ## API Verbs
 

@@ -6,7 +6,7 @@
 
 <p align="center">
 
-<img src="https://github.com/dudwns9331/WebStudy/blob/master/ReactJS/images/title.PNG" height="465px" width="800px">
+<img src="https://github.com/dudwns9331/WebStudy/blob/master/ReactJS/images/title.PNG" height="600px" width="800px">
 
 </p>
 
@@ -26,9 +26,9 @@
 
 - [x] **[4. Networking](https://github.com/dudwns9331/WebStudy/blob/master/ReactJS/Networking.md)**
 
-- [ ] **5. Containers**
+- [x] **[5. Containers](https://github.com/dudwns9331/WebStudy/blob/master/ReactJS/Containers.md)**
 
-- [ ] **6. Presenters**
+- [x] **[6. Presenters](https://github.com/dudwns9331/WebStudy/blob/master/ReactJS/Presenters1.md)**
 
 - [ ] **7. Deployment**
 
