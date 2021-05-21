@@ -3,8 +3,8 @@ import PropTypes from "prop-types";
 import styled from "styled-components";
 
 const VideoContainer = styled.div`
-  width: 100%;
-  height: 100%;
+  width: 80%;
+  height: 60%;
 `;
 
 const VideoTitle = styled.div`
@@ -19,8 +19,9 @@ const VideoTab = styled.div`
 const VideoButton = styled.button``;
 
 const VideoYoutube = styled.iframe`
-  width: 80%;
-  height: 65%;
+  width: 100%;
+  height: 100%;
+  margin: 20px;
 `;
 
 const Videos = ({ videoUrl, name, type }) => (

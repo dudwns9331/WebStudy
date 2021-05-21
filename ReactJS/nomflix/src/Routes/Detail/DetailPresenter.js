@@ -37,7 +37,7 @@ const Content = styled.div`
 `;
 
 const Cover = styled.div`
-  width: 30%;
+  width: 50%;
   background-image: url(${(props) => props.bgImage});
   background-position: center center;
   background-size: cover;
@@ -45,13 +45,13 @@ const Cover = styled.div`
 `;
 
 const Data = styled.div`
-  width: 70%;
-  margin-left: 10px;
+  width: 80%;
+  margin-left: 60px;
 `;
 
 const Title = styled.h3`
   font-size: 50px;
-  margin-bottom: 10px;
+  margin-bottom: 15px;
 `;
 
 const ItemContainer = styled.div`
