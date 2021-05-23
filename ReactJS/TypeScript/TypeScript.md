@@ -16,7 +16,7 @@
 
 ### 1. Introduction to TypeScript
 
-TypeScript는 javaScript의 superset이다. (다른 언어 위에서 )
+TypeScript는 javaScript의 superset이다. (다른 언어 위에서 작동하는 또다른 언어?)
 
 ### 2. Introduction to TypeScript part Two
 
