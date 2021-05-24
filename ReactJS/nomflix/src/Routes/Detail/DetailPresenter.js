@@ -72,6 +72,7 @@ const Overview = styled.p`
   margin-bottom: 20px;
 `;
 
+// 처음 시도
 // const Videos = styled.iframe`
 //   width: 70%;
 //   height: 70%;
@@ -130,9 +131,11 @@ const DetailPresenter = ({ result, error, loading }) =>
             </Item>
           </ItemContainer>
           <Overview>{result.overview}</Overview>
+          {/* 처음 시도 비디오 추가 */}
           {/* <Videos
             src={`https://www.youtube.com/embed/${result.videos.results[0].key}`}
           ></Videos> */}
+          {/* 두번째 시도 비디오 추가 */}
           <Videos
             videoUrl={result.videos.results[0].key}
             name={result.videos.results[0].name}
