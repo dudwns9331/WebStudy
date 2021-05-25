@@ -141,6 +141,11 @@ const DetailPresenter = ({ result, error, loading }) =>
             name={result.videos.results[0].name}
             type={result.videos.results[0].type}
           ></Videos>
+          {/* <Videos
+            videoUrl={result.videos.results[1].key}
+            name={result.videos.results[1].name}
+            type={result.videos.results[1].type}
+          ></Videos> */}
         </Data>
       </Content>
     </Container>
