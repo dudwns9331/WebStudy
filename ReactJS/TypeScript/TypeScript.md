@@ -10,7 +10,6 @@
 6. React Events and TypeScript
 7. Styled Components and TypeScript
 8. Styled Components and TypeScript part Two
-9. Conclusion
 
 ---
 
@@ -162,10 +161,135 @@ export default App;
 
 ### 5. React Props and TypeScript
 
-### 6. React Events and TypeScript
+```tsx
+import React from "react";
+
+interface IProps {
+  count: number;
+}
+
+const Number: React.FunctionComponent<IProps> = ({ count }) => (
+  <Container isBlue={count > 10}>{count}</Container>
+);
+
+export default Number;
+```
+
+일반 js 코드에서 사용하는것처럼 props의 type을 정의하지 않고 바로 인자로 넘겨주는것이 아닌, interface를 통해서 props의 내용을 먼저 정의해주고 이에 대한 type을 정의해준다.
+
+위의 코드는 Number라는 functional Const 변수에 `React.FunctionCompoenet(=FC)`라는 타입을 지정해주어 리액트 함수컴포넌트라는 것을 미리 알려준다. 이에 사용하는 props를 interface를 통해서 미리 지정해주어 알려준다. `<IProps>`와 같이 해당 컴포넌트가 가지는 props에 대한 정의를 추가해 줄 수 있다.
+
+### 6. React Events and TypeScrit
+
+## `Input.tsx`
+
+```tsx
+import React from "react";
+
+interface IInputProps {
+  value: string;
+  onChange: (event: React.SyntheticEvent<HTMLInputElement>) => void;
+}
+
+export const Input: React.FunctionComponent<IInputProps> = ({
+  value,
+  onChange,
+}) => (
+  <input
+    type="text"
+    placeholder="Name"
+    value={value}
+    onChange={onChange}
+  ></input>
+);
+
+interface IFormProps {
+  onFormSubmit: (event: React.FormEvent) => void;
+}
+
+export const Form: React.FunctionComponent<IFormProps> = ({
+  children,
+  onFormSubmit,
+}) => <form onSubmit={onFormSubmit}>{children}</form>;
+```
+
+`Input.tsx`의 파일을 통해서 input Event에 대해서 예시를 들어 설명한다. Input과 Form을 export 하도록 되어있는데, Input에 사용되는 Props에 대해서 value와 onChange(이벤트 함수) 를 Interface를 통해서 선언하게 된다. value는 string으로 입력을 받고 `onChange: (evnet:React.SyntheticEvent<HTMLInputElement>)`를 통해서 event에 대응하는 함수라는것을 알려주는데, `HTMLInputElement`로부터 발생하는 이벤트라는 뜻이다. 여기서 children에 대해서 따로 interface를 작성해주지 않는 이유는 `{ children }` 은 기본적으로 제공되는 props이기 때문이다.
+
+[SyntheticEvent](https://ko.reactjs.org/docs/events.html)설명 바로가기
+
+```tsx
+onChange = (event: React.SyntheticEvent<HTMLInputElement>) => {
+  console.log(event.target);
+};
+
+onFormSubmit = (event: React.FormEvent) => {
+  event.preventDefault();
+};
+```
+
+위와 같이 Input에서 정의한 함수들을 type을 명시한 채로 custom하여 사용하면 된다.
 
 ### 7. Styled Components and TypeScript
 
-### 8. Styled Components and TypeScript part Two
+## Number.tsx
 
-### 9. Conclusion
+```tsx
+// Styled Component를 사용하는 방법
+interface IContainerProps {
+  isBlue: boolean;
+}
+
+const Container = styled.span<IContainerProps>`
+  color: ${(props) => (props.isBlue ? props.theme.blueColor : "black")};
+`;
+```
+
+Container는 styled-component에 의해서 span을 의미하는데 이에 대해서 ts에서는 span에 들어가는 props에 대한 type이 정의되어 있어야한다. color의 값을 지정하는데 props에 대해서 isBlue를 통해 파란색인가를 따지는 조건문을 통해서 색을 결정하도록 한다. 여기서 isBlue는 interface IContainerProps에 의해서 boolean으로 정의되어 있다.
+
+### 8. Styled Components and TypeScrip part Two
+
+## `theme.ts`
+
+```tsx
+export default {
+  blueColor: "red",
+};
+```
+
+theme.ts를 통해서 variable에 대한 정의를 할 수 있도록 한다.
+
+## `index.tsx`
+
+```tsx
+import React from "react";
+import ReactDOM from "react-dom";
+import App from "./App";
+
+import { ThemeProvider } from "styled-components";
+import theme from "./theme";
+
+ReactDOM.render(
+  <ThemeProvider theme={theme}>
+    <App />
+  </ThemeProvider>,
+  document.getElementById("root")
+);
+```
+
+theme.ts에서 정의한 theme에 대한 값들을 ThemeProvider를 통해서 테마에 대한 값들을 제공하도록 한다.
+
+## `styled.d.ts`
+
+```tsx
+// https://styled-components.com/docs/api
+
+import "styled-components";
+
+declare module "styled-components" {
+  export interface DefaultTheme {
+    blueColor: string;
+  }
+}
+```
+
+d의 의미는 definition이다. style에 대해서 ts로 정의하겠다는 의미로 `styled-compoenets` 모듈의 `DefaultTheme`의 blueColor의 타입을 string으로 정하겠다는 것이다. `theme.ts`에 정의된 것들에 대해서 type을 미리 정의하면 `props.theme.blueColor`에 대해서 이미 string으로 정의되어 있기 때문에 불필요한 확인 과정을 줄일 수 있다.
