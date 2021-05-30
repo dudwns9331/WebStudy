@@ -6,7 +6,7 @@
 
 <p align="center">
 
-<img src="https://github.com/dudwns9331/WebStudy/blob/master/ReactJS/images/title.PNG" height="600px" width="800px">
+<img src="https://github.com/dudwns9331/WebStudy/blob/master/ReactJS/images/title.PNG" height="650px" width="830px">
 
 </p>
 
@@ -18,7 +18,7 @@
 
 ## **index**
 
-- [ ] **[1. Fundamentals & Additional information](https://github.com/dudwns9331/WebStudy/tree/master/ReactJS/Fundamentals/Details)**
+- [x] **[1. Fundamentals & Additional information](https://github.com/dudwns9331/WebStudy/tree/master/ReactJS/Fundamentals/Details)**
 
 - [x] **[2. Project_Setup](https://github.com/dudwns9331/WebStudy/blob/master/ReactJS/Project_Setup.md)**
 
@@ -30,6 +30,8 @@
 
 - [x] **[6. Presenters](https://github.com/dudwns9331/WebStudy/blob/master/ReactJS/Presenters1.md)**
 
-- [ ] **7. Deployment**
+- [ ] **7. Deployment** soon!
 
-- [ ] **8. Bonus : Typescript with React**
+- [x] **8. Bonus : Typescript with React**
+
+- [ ] **9. Refactoring with TypeScript : Movie-app**
