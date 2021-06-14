@@ -30,8 +30,10 @@
 
 - [x] **[6. Presenters](https://github.com/dudwns9331/WebStudy/blob/master/ReactJS/Presenters1.md)**
 
-- [ ] **7. Deployment** soon!
+- [x] **7. Deployment** soon!
 
 - [x] **8. Bonus : Typescript with React**
 
 - [ ] **9. Refactoring with TypeScript : Movie-app**
+
+- dell 노트북으로 이전함.
